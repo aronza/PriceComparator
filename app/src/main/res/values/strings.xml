@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Current Place</string>
+    <string name="title_activity_maps">NBT</string>
+    <string name="option_get_place">Confirm Destination</string>
+    <string name="pick_place">Choose a place</string>
+</resources>
