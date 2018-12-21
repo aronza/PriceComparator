@@ -39,11 +39,13 @@ public class CompareActivity extends AppCompatActivity {
         Double curLatitude = intent.getDoubleExtra(MapsActivity.CUR_LAT_MESSAGE,0);
         Double curLongitude = intent.getDoubleExtra(MapsActivity.CUR_LONG_MESSAGE,0);
         String address = intent.getStringExtra(MapsActivity.ADD_MESSAGE);
+
+        //Set up Uber API credentials
         SessionConfiguration config = new SessionConfiguration.Builder()
                 // mandatory
-                .setClientId("OJIXSjent-mZAHu6jo6yZgqSSmvku2cp")
+                .setClientId("id")
                 // required for enhanced button features
-                .setServerToken("7Obb6klA9LZxHrViNhzwHDjhQBgXiD6AKDD4Mym8")
+                .setServerToken("token")
                 // required for implicit grant authentication
                 //.setRedirectUri("<REDIRECT_URI>")
                 // optional: set sandbox as operating environment
@@ -79,8 +81,8 @@ public class CompareActivity extends AppCompatActivity {
 
         //----------------------Lyft-----------------
         ApiConfig apiConfig = new ApiConfig.Builder()
-                .setClientId("ytxgHiJV6Uj-")
-                .setClientToken("BeC2HYyz1mt1cUFXVA1Gkp8Sy78ORnv59F8Us4kBJO6FkC7kY6H/JTiKQhcZ2PK24U2qUNPveystuNlirttp3ndN3xegNlUaUkLThqeyA5T6/LGt8ffGXYY=")
+                .setClientId("key")
+                .setClientToken("token")
                 .build();
 
         LyftButton lyftButton = findViewById(R.id.lyft_button);
